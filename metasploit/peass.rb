@@ -101,7 +101,7 @@ class MetasploitModule < Msf::Post
       end
 
       # Encode PEASS script
-      print_status("Encoding PEASS in Base64...")
+      print_status("Encoding PEASS script in Base64...")
       peass_script_64 = Base64.encode64(peass_script)
 
       # Needed code to decode it in Unix and Windows
@@ -177,7 +177,7 @@ class MetasploitModule < Msf::Post
       end
     end
     
-    # Run PEASS script
+    # Initialize and Run PEASS script
     begin
       tmpout = "\n"
       print_status "Running PEASS..."
